@@ -1,0 +1,120 @@
+{
+  "nav": {
+    "origin": "001 — ORIGIN",
+    "archive": "002 — ARCHIVE",
+    "identity": "003 — IDENTITY",
+    "stack": "004 — STACK",
+    "commit": "005 — COMMIT"
+  },
+  "menu": {
+    "systemModule": "SYS // NAVIGATION_MODULE v1.0"
+  },
+  "language": {
+    "english": "English",
+    "dutch": "Dutch",
+    "switch": "Language"
+  },
+  "hero": {
+    "systemOnline": "SYSTEM ONLINE",
+    "tagline": "Full-Stack Engineer // Open Source Architect",
+    "ctaLabel": "Explore Archive"
+  },
+  "contributions": {
+    "title": "CONTRIBUTION_MAP",
+    "less": "Less",
+    "more": "More"
+  },
+  "repos": {
+    "title": "REPOSITORY ARCHIVE",
+    "scrollHint": "Scroll to explore"
+  },
+  "bio": {
+    "sectionTitleTop": "SYNTAX",
+    "sectionTitleBottom": "BIO_",
+    "headline": "Building systems that scale thought.",
+    "location": "Harderwijk, The Netherlands",
+    "summary": "I'm a software engineer passionate about distributed systems, developer tools, and the intersection of design and engineering. With over 5 years of experience building production systems, I approach every problem as an architecture challenge — seeking elegant, maintainable solutions that stand the test of scale.",
+    "experience": "EXPERIENCE",
+    "education": "EDUCATION",
+    "philosophy": "PHILOSOPHY",
+    "modules": {
+      "experience": [
+        {
+          "role": "Senior Software Engineer",
+          "org": "Your Company",
+          "period": "2022 — Present",
+          "detail": "Leading the platform team, designing APIs and infrastructure that serves millions of requests daily."
+        },
+        {
+          "role": "Software Engineer",
+          "org": "Previous Company",
+          "period": "2020 — 2022",
+          "detail": "Built real-time data pipelines and microservice architecture for the analytics platform."
+        },
+        {
+          "role": "Junior Developer",
+          "org": "First Company",
+          "period": "2018 — 2020",
+          "detail": "Full-stack development on customer-facing applications using React and Node.js."
+        }
+      ],
+      "education": [
+        {
+          "role": "HBO-ICT",
+          "org": "Hogeschool Windesheim",
+          "period": "2022 — 2026",
+          "detail": "Focus on algorithms, distributed systems, and human-computer interaction."
+        },
+        {
+          "role": "Informatica",
+          "org": "RSG Slingerbos Harderwijk",
+          "period": "2020 — 2022"
+        }
+      ],
+      "philosophy": [
+        {
+          "role": "Code is communication",
+          "org": "",
+          "period": "",
+          "detail": "I believe the best code tells a story. Every function name, every abstraction boundary, every commit message is an opportunity to communicate intent clearly to the next engineer."
+        },
+        {
+          "role": "Ship early, iterate often",
+          "org": "",
+          "period": "",
+          "detail": "Perfect is the enemy of deployed. I favor rapid iteration with strong observability over lengthy planning cycles."
+        }
+      ]
+    },
+    "codeIsCommunication": "Code is communication",
+    "codeDetail": "I believe the best code tells a story. Every function name, every abstraction boundary, every commit message is an opportunity to communicate intent clearly to the next engineer.",
+    "shipEarly": "Ship early, iterate often",
+    "shipDetail": "Perfect is the enemy of deployed. I favor rapid iteration with strong observability over lengthy planning cycles."
+  },
+  "stack": {
+    "title": "SKILL TREE",
+    "deps": "deps",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "infrastructure": "Infrastructure",
+    "data": "Data",
+    "tools": "Tools"
+  },
+  "contact": {
+    "title": "COMMIT",
+    "subtitle": "TO CONTACT_",
+    "name": "Your Name",
+    "email": "your@email.com",
+    "message": "Your Message",
+    "nameLabel": "git config user.name",
+    "emailLabel": "git config user.email",
+    "messageLabel": "git commit -m",
+    "sendLabel": "PUSH",
+    "namePlaceholder": "Your Name",
+    "emailPlaceholder": "your@email.com",
+    "messagePlaceholder": "Your message here...",
+    "allFieldsRequired": "All fields required",
+    "sendSuccess": "Message pushed successfully",
+    "sendError": "Failed to send message"
+  }
+}

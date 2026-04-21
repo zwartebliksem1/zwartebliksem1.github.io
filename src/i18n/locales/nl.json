@@ -1,0 +1,120 @@
+{
+  "nav": {
+    "origin": "001 — OORSPRONG",
+    "archive": "002 — ARCHIEF",
+    "identity": "003 — IDENTITEIT",
+    "stack": "004 — STAPEL",
+    "commit": "005 — COMMIT"
+  },
+  "menu": {
+    "systemModule": "SYS // NAVIGATIE_MODULE v1.0"
+  },
+  "language": {
+    "english": "English",
+    "dutch": "Nederlands",
+    "switch": "Taal"
+  },
+  "hero": {
+    "systemOnline": "SYSTEEM ONLINE",
+    "tagline": "Full-Stack Ingenieurs // Open Source Architect",
+    "ctaLabel": "Verken archief"
+  },
+  "contributions": {
+    "title": "BIJDRAGEN",
+    "less": "Minder",
+    "more": "Meer"
+  },
+  "repos": {
+    "title": "REPOSITORY ARCHIEF",
+    "scrollHint": "Scroll om te verkennen"
+  },
+  "bio": {
+    "sectionTitleTop": "SYNTAX",
+    "sectionTitleBottom": "BIO_",
+    "headline": "Systemen bouwen die gedachte schalen.",
+    "location": "Harderwijk, Nederland",
+    "summary": "Ik ben een software engineer gepassioneerd door gedistribueerde systemen, developer tools, en de kruising van design en engineering. Met meer dan 5 jaar ervaring in het bouwen van productiesystemen, benaader ik elk probleem als een architectuuruitdaging — op zoek naar elegante, onderhoudbare oplossingen die de proef van schaal doorstaan.",
+    "experience": "ERVARING",
+    "education": "ONDERWIJS",
+    "philosophy": "FILOSOFIE",
+    "modules": {
+      "experience": [
+        {
+          "role": "Afstudeerstage Software Engineer",
+          "org": "Giraffes4Zebras",
+          "period": "feb. 2026 — jun. 2026",
+          "detail": "."
+        },
+        {
+          "role": "Stagiair Docent ICT",
+          "org": "Landstede MBO",
+          "period": "sep. 2025 — jan. 2026",
+          "detail": "Bouwde realtime datapijplijnen en microservice-architectuur voor het analytics-platform."
+        },
+        {
+          "role": "Stagiair Webdevelopment",
+          "org": "Flinker Ontwikkeling",
+          "period": "apr. 2024 — jun. 2024",
+          "detail": "Full-stack ontwikkeling van klantgerichte applicaties met React en Node.js."
+        }
+      ],
+      "education": [
+        {
+          "role": "HBO-ICT",
+          "org": "Hogeschool Windesheim",
+          "period": "2022 — 2026",
+          "detail": "Focus op algoritmen, gedistribueerde systemen en mens-computerinteractie."
+        },
+        {
+          "role": "Informatica",
+          "org": "RSG Slingerbos Harderwijk",
+          "period": "2020 — 2022"
+        }
+      ],
+      "philosophy": [
+        {
+          "role": "Code is communicatie",
+          "org": "",
+          "period": "",
+          "detail": "Ik geloof dat de beste code een verhaal vertelt. Elke functienaam, elke abstractiegrens en elk commit-bericht is een kans om intentie helder te communiceren naar de volgende engineer."
+        },
+        {
+          "role": "Snel shippen, vaak itereren",
+          "org": "",
+          "period": "",
+          "detail": "Perfect is de vijand van live. Ik kies liever voor snelle iteratie met sterke observability dan voor lange planningscycli."
+        }
+      ]
+    },
+    "codeIsCommunication": "Code is communicatie",
+    "codeDetail": "Ik geloof dat de beste code een verhaal vertelt. Elke functienaam, elke abstractiegrens, elk commit-bericht is een kans om de intentie duidelijk over te brengen aan de volgende engineer.",
+    "shipEarly": "Vroeg verzenden, vaak itereren",
+    "shipDetail": "Perfect is de vijand van deploy. Ik geef de voorkeur aan snelle iteratie met sterke waarneembaarheid boven lange planningscycli."
+  },
+  "stack": {
+    "title": "VAARDIGHEIDENBOOM",
+    "deps": "afhankelijkheden",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "infrastructure": "Infrastructuur",
+    "data": "Gegevens",
+    "tools": "Hulpmiddelen"
+  },
+  "contact": {
+    "title": "COMMIT",
+    "subtitle": "NAAR_CONTACT",
+    "name": "Naam",
+    "email": "E-mail",
+    "message": "Bericht",
+    "nameLabel": "git config user.name",
+    "emailLabel": "git config user.email",
+    "messageLabel": "git commit -m",
+    "sendLabel": "PUSH",
+    "namePlaceholder": "Naam",
+    "emailPlaceholder": "E-mail",
+    "messagePlaceholder": "Bericht hier...",
+    "allFieldsRequired": "Alle velden zijn verplicht",
+    "sendSuccess": "Bericht succesvol verstuurd",
+    "sendError": "Fout bij verzenden van bericht"
+  }
+}
