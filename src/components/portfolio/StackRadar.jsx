@@ -9,27 +9,27 @@ const SKILL_TREE = [
   {
     name: "Frontend",
     level: "core",
-    children: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Three.js"],
+    children: ["JavaScript", "TypeScript", "React.js", "Vue.js", "Tailwind CSS", "Bootstrap CSS"],
   },
   {
     name: "Backend",
     level: "core",
-    children: ["Node.js", "Go", "Python", "Rust", "GraphQL"],
+    children: ["Node.js", "Java", "Python", "JavaScript", "C#", "C++", "PHP"],
   },
   {
     name: "Infrastructure",
     level: "core",
-    children: ["Docker", "Kubernetes", "AWS", "Terraform", "CI/CD"],
+    children: ["Docker", "Next.js", "Vite"],
   },
   {
     name: "Data",
     level: "core",
-    children: ["PostgreSQL", "Redis", "MongoDB", "Kafka", "ElasticSearch"],
+    children: ["PostgreSQL", "MySQL", "MongoDB"],
   },
   {
     name: "Tools",
     level: "core",
-    children: ["Git", "Vim", "Linux", "Figma", "Prometheus"],
+    children: ["Git", "Linux", "VS Code"],
   },
 ];
 
@@ -54,7 +54,7 @@ function SkillNode({ skill, index, isActive, onClick }) {
   );
 }
 
-function DependencyGroup({ group, index, activeSkill, onSkillClick }) {
+function DependencyGroup({ group, index, activeSkill }) {
   const { t } = useTranslation();
   return (
     <motion.div
@@ -80,7 +80,7 @@ function DependencyGroup({ group, index, activeSkill, onSkillClick }) {
             skill={skill}
             index={i + index * 5}
             isActive={activeSkill === skill}
-            onClick={onSkillClick}
+            onClick=""
           />
         ))}
       </div>
@@ -117,8 +117,7 @@ export default function StackRadar() {
             <span className="text-muted-foreground">RADAR_</span>
           </h2>
           <p className="font-sans text-base text-muted-foreground max-w-xl leading-relaxed">
-            A dependency tree of tools, languages, and frameworks. Core packages at the root, 
-            sub-dependencies branching out.
+            {t('stack.description')}
           </p>
 
           {activeSkill && (
@@ -147,7 +146,6 @@ export default function StackRadar() {
               group={group}
               index={i}
               activeSkill={activeSkill}
-              onSkillClick={setActiveSkill}
             />
           ))}
         </div>
@@ -161,10 +159,10 @@ export default function StackRadar() {
           className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6"
         >
           {[
-            { label: "LANGUAGES", value: "8+" },
-            { label: "FRAMEWORKS", value: "12+" },
-            { label: "YEARS EXP", value: "5+" },
-            { label: "OPEN SOURCE", value: "30+" },
+            { label: t('stack.stats.languages'), value: "8+" },
+            { label: t('stack.stats.frameworks'), value: "12+" },
+            { label: t('stack.stats.yearsExp'), value: "5+" },
+            { label: t('stack.stats.projects'), value: "15+" },
           ].map(stat => (
             <div key={stat.label} className="border border-border/30 rounded-sm p-5 text-center bg-card/40">
               <div className="font-mono text-3xl font-bold text-primary mb-1">{stat.value}</div>

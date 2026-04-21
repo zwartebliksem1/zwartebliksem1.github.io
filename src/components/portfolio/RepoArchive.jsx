@@ -7,83 +7,11 @@ import RepoCard from './RepoCard';
 const GITHUB_USERNAME = import.meta.env.VITE_GITHUB_USERNAME || 'zwartebliksem1';
 const REPO_LIMIT = 24;
 
-// Only repos listed here will appear in the archive. Keep this in sync with your GitHub repos.
 const ALLOWED_REPOS = [
-  'zwartebliksem1.github.io',
   'Bussen',
   'Vingeren',
   'Buddies',
   'SoundSnap',
-];
-
-// Placeholder repos - replace with your own
-const REPOS = [
-  {
-    name: "neural-render-engine",
-    description: "A high-performance neural rendering engine built for real-time 3D scene reconstruction using WebGPU and custom shaders.",
-    language: "TypeScript",
-    techStack: ["TypeScript", "React", "Rust"],
-    stars: 234,
-    forks: 45,
-    lastCommit: "2d ago",
-    url: "https://github.com/yourusername/neural-render-engine",
-    liveUrl: "https://neural-render.demo.dev",
-  },
-  {
-    name: "distributed-cache",
-    description: "A distributed in-memory cache with automatic sharding, replication, and consistency guarantees for microservice architectures.",
-    language: "Go",
-    techStack: ["Go", "Python"],
-    stars: 891,
-    forks: 123,
-    lastCommit: "5d ago",
-    url: "https://github.com/yourusername/distributed-cache",
-    liveUrl: null,
-  },
-  {
-    name: "quantum-css",
-    description: "A utility-first CSS framework with quantum-inspired naming conventions and built-in design token management.",
-    language: "JavaScript",
-    techStack: ["JavaScript", "React"],
-    stars: 1420,
-    forks: 287,
-    lastCommit: "1d ago",
-    url: "https://github.com/yourusername/quantum-css",
-    liveUrl: "https://quantum-css.dev",
-  },
-  {
-    name: "realtime-collab",
-    description: "Real-time collaborative document editing engine with conflict-free replicated data types (CRDTs) and WebSocket streaming.",
-    language: "TypeScript",
-    techStack: ["TypeScript", "React", "Python"],
-    stars: 567,
-    forks: 89,
-    lastCommit: "3d ago",
-    url: "https://github.com/yourusername/realtime-collab",
-    liveUrl: "https://collab.demo.dev",
-  },
-  {
-    name: "ml-pipeline",
-    description: "End-to-end machine learning pipeline with automated feature engineering, model selection, and deployment orchestration.",
-    language: "Python",
-    techStack: ["Python", "Go"],
-    stars: 345,
-    forks: 56,
-    lastCommit: "1w ago",
-    url: "https://github.com/yourusername/ml-pipeline",
-    liveUrl: null,
-  },
-  {
-    name: "micro-runtime",
-    description: "Ultra-lightweight container runtime optimized for serverless workloads with sub-millisecond cold start times.",
-    language: "Rust",
-    techStack: ["Rust", "Go"],
-    stars: 2100,
-    forks: 340,
-    lastCommit: "12h ago",
-    url: "https://github.com/yourusername/micro-runtime",
-    liveUrl: null,
-  },
 ];
 
 function formatRelativeTime(isoDate) {
@@ -148,9 +76,9 @@ export default function RepoArchive() {
             };
           });
 
-        setRepos(mapped.length ? mapped : REPOS);
+        setRepos(mapped.length ? mapped : []);
       } catch {
-        setRepos(REPOS);
+        setRepos([]);
       } finally {
         setIsLoading(false);
       }
@@ -163,7 +91,7 @@ export default function RepoArchive() {
     };
   }, []);
 
-  const displayRepos = useMemo(() => (repos.length ? repos : REPOS), [repos]);
+  const displayRepos = useMemo(() => (repos.length ? repos : []), [repos]);
 
   const scroll = (dir) => {
     if (scrollRef.current) {
@@ -216,7 +144,7 @@ export default function RepoArchive() {
         className="flex gap-6 overflow-x-auto px-6 md:px-12 pb-6 scrollbar-hide"
         style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
       >
-        {(isLoading ? REPOS : displayRepos).map((repo, i) => (
+        {(isLoading ? [] : displayRepos).map((repo, i) => (
           <RepoCard key={repo.name} repo={repo} index={i} />
         ))}
       </div>

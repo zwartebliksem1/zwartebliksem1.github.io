@@ -93,12 +93,19 @@
   },
   "stack": {
     "title": "SKILL TREE",
+    "description": "Test",
     "deps": "deps",
     "frontend": "Frontend",
     "backend": "Backend",
     "infrastructure": "Infrastructure",
     "data": "Data",
-    "tools": "Tools"
+    "tools": "Tools",
+    "stats": {
+      "languages": "LANGUAGES",
+      "frameworks": "FRAMEWORKS",
+      "yearsExp": "YEARS EXP",
+      "projects": "PROJECTS"
+    }
   },
   "contact": {
     "title": "COMMIT",

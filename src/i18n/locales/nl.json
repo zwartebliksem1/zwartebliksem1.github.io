@@ -16,7 +16,7 @@
   },
   "hero": {
     "systemOnline": "SYSTEEM ONLINE",
-    "tagline": "Full-Stack Ingenieurs // Open Source Architect",
+    "tagline": "Full-Stack Developer // CEO van Lucone",
     "ctaLabel": "Verken archief"
   },
   "contributions": {
@@ -92,13 +92,20 @@
     "shipDetail": "Perfect is de vijand van deploy. Ik geef de voorkeur aan snelle iteratie met sterke waarneembaarheid boven lange planningscycli."
   },
   "stack": {
-    "title": "VAARDIGHEIDENBOOM",
+    "title": "VAARDIGHEDEN",
+    "description": "Test",
     "deps": "afhankelijkheden",
     "frontend": "Frontend",
     "backend": "Backend",
     "infrastructure": "Infrastructuur",
     "data": "Gegevens",
-    "tools": "Hulpmiddelen"
+    "tools": "Hulpmiddelen",
+    "stats": {
+      "languages": "TALEN",
+      "frameworks": "FRAMEWORKS",
+      "yearsExp": "JAREN ERVARING",
+      "projects": "PROJECTEN"
+    }
   },
   "contact": {
     "title": "COMMIT",
