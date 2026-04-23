@@ -6,28 +6,28 @@
 
 @layer base {
   :root {
-    --background: 220 40% 2%;
-    --foreground: 214 32% 91%;
-    --card: 220 30% 6%;
-    --card-foreground: 214 32% 91%;
-    --popover: 220 30% 6%;
-    --popover-foreground: 214 32% 91%;
-    --primary: 217 100% 59%;
-    --primary-foreground: 220 40% 2%;
-    --secondary: 220 20% 12%;
-    --secondary-foreground: 214 32% 91%;
-    --muted: 220 20% 12%;
-    --muted-foreground: 215 20% 55%;
-    --accent: 186 100% 50%;
-    --accent-foreground: 220 40% 2%;
+    --background: 210 33% 98%;
+    --foreground: 220 28% 16%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 28% 16%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 28% 16%;
+    --primary: 217 100% 45%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 22% 93%;
+    --secondary-foreground: 220 28% 16%;
+    --muted: 210 22% 93%;
+    --muted-foreground: 220 10% 40%;
+    --accent: 186 100% 36%;
+    --accent-foreground: 0 0% 100%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 220 20% 14%;
-    --input: 220 20% 14%;
-    --ring: 217 100% 59%;
-    --chart-1: 217 100% 59%;
-    --chart-2: 186 100% 50%;
-    --chart-3: 220 30% 25%;
+    --border: 214 24% 85%;
+    --input: 214 24% 85%;
+    --ring: 217 100% 45%;
+    --chart-1: 217 100% 45%;
+    --chart-2: 186 100% 36%;
+    --chart-3: 220 30% 55%;
     --chart-4: 200 80% 45%;
     --chart-5: 260 60% 55%;
     --radius: 0.25rem;
@@ -35,14 +35,14 @@
     --font-mono: 'JetBrains Mono', monospace;
     --font-sans: 'Inter', sans-serif;
 
-    --sidebar-background: 220 30% 4%;
-    --sidebar-foreground: 214 32% 91%;
-    --sidebar-primary: 217 100% 59%;
-    --sidebar-primary-foreground: 220 40% 2%;
-    --sidebar-accent: 220 20% 10%;
-    --sidebar-accent-foreground: 214 32% 91%;
-    --sidebar-border: 220 20% 14%;
-    --sidebar-ring: 217 100% 59%;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 220 28% 16%;
+    --sidebar-primary: 217 100% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 22% 93%;
+    --sidebar-accent-foreground: 220 28% 16%;
+    --sidebar-border: 214 24% 85%;
+    --sidebar-ring: 217 100% 45%;
   }
 
   .dark {
@@ -98,14 +98,14 @@ html {
   width: 4px;
 }
 ::-webkit-scrollbar-track {
-  background: hsl(220, 40%, 2%);
+  background: hsl(var(--background));
 }
 ::-webkit-scrollbar-thumb {
-  background: hsl(217, 100%, 59%);
+  background: hsl(var(--primary));
   border-radius: 2px;
 }
 
 ::selection {
-  background: hsl(217, 100%, 59%);
-  color: hsl(220, 40%, 2%);
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
 }

@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X } from 'lucide-react';
+import { Menu, Moon, Sun, X } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 const NAV_LINKS = [
@@ -14,11 +14,28 @@ const NAV_LINKS = [
 export default function Navigation() {
   const { t, i18n } = useTranslation();
   const [open, setOpen] = useState(false);
+  const [theme, setTheme] = useState('dark');
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme');
+    const initialTheme = savedTheme === 'light' ? 'light' : 'dark';
+
+    setTheme(initialTheme);
+    document.documentElement.classList.toggle('dark', initialTheme === 'dark');
+  }, []);
 
   const toggleLanguage = () => {
     const newLang = i18n.language === 'en' ? 'nl' : 'en';
     i18n.changeLanguage(newLang);
     localStorage.setItem('language', newLang);
+  };
+
+  const toggleTheme = () => {
+    const newTheme = theme === 'dark' ? 'light' : 'dark';
+
+    setTheme(newTheme);
+    document.documentElement.classList.toggle('dark', newTheme === 'dark');
+    localStorage.setItem('theme', newTheme);
   };
 
   return (
@@ -66,6 +83,17 @@ export default function Navigation() {
             <div className="absolute bottom-8 left-8 font-mono text-xs text-muted-foreground">
               <span className="text-primary">SYS</span> // {t('menu.systemModule')}
             </div>
+
+            <motion.button
+              onClick={toggleTheme}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.35 }}
+              className="absolute bottom-8 right-40 px-4 py-2 rounded-lg border border-primary/40 text-sm font-mono text-primary hover:bg-primary/10 transition-colors inline-flex items-center gap-2"
+            >
+              {theme === 'dark' ? <Moon className="w-4 h-4" /> : <Sun className="w-4 h-4" />}
+              {theme === 'dark' ? t('theme.light') : t('theme.dark')}
+            </motion.button>
 
             <motion.button
               onClick={toggleLanguage}

@@ -1,13 +1,17 @@
 {
   "nav": {
-    "origin": "001 — OORSPRONG",
+    "origin": "001 — HOME",
     "archive": "002 — ARCHIEF",
     "identity": "003 — IDENTITEIT",
-    "stack": "004 — STAPEL",
-    "commit": "005 — COMMIT"
+    "stack": "004 — VAARDIGHEDEN",
+    "commit": "005 — CONTACT"
   },
   "menu": {
     "systemModule": "SYS // NAVIGATIE_MODULE v1.0"
+  },
+  "theme": {
+    "dark": "Donker",
+    "light": "Licht"
   },
   "language": {
     "english": "English",
@@ -26,7 +30,29 @@
   },
   "repos": {
     "title": "REPOSITORY ARCHIEF",
-    "scrollHint": "Scroll om te verkennen"
+    "scrollHint": "Recente repositories om te verkennen"
+  },
+  "projects": {
+    "title": "PROJECTEN",
+    "scrollHint": "Persoonlijk & klantwerk",
+    "readMore": "Lees verder",
+    "close": "Sluiten",
+    "items": {
+      "luconePlatform": "Intern SaaS-platform voor het beheren van klantprojecten, facturen en teamworkflows. Gebouwd voor Lucone BV.",
+      "kasTelApp": "Kas-tel app voor snelle voorraadcontrole en eindafrekening.",
+      "storageTracker": "Storage tracking tool om voorraadniveaus, locaties en gebruik te monitoren.",
+      "minecraftPlugins": "Aangepaste Minecraft-plugins gebouwd voor private servers en gameplay-experimenten.",
+      "matchfinderrz": "Prototype matchingsplatform gericht op snel teamgenoten vinden en profielen filteren.",
+      "socialMediaCalendar": "Contentplanningsomgeving om social posts te plannen, ordenen en beoordelen."
+    },
+    "details": {
+      "luconePlatform": "Dit platform combineert CRM, taakworkflows en facturatie in één intern dashboard. Het is gebouwd voor dagelijkse operatie met focus op snelheid, controle en duidelijk eigenaarschap binnen het team.",
+      "kasTelApp": "Gemaakt om kassamomenten aan het einde van een dienst te vereenvoudigen. De app registreert coupuretellingen, vergelijkt verwachte totalen en markeert afwijkingen voor verzending.",
+      "storageTracker": "Een praktisch systeem voor opslagadministratie. Het ondersteunt snel zoeken, verplaatsingslogboeken en duidelijke overzichten zodat teams precies zien wat beschikbaar is en waar.",
+      "minecraftPlugins": "Een set pluginmodules voor minigames, moderatietools en quality-of-life functies op de server. Ideaal om event-driven architectuur in Java mee te testen.",
+      "matchfinderrz": "Een vroeg concept waarbij gebruikers gematcht worden op rolvoorkeuren, beschikbaarheid en gedeelde doelen. De focus lag op filter-UX en snelle profielvergelijkingen.",
+      "socialMediaCalendar": "Een lichte contentpipeline waarin ideeën van concept naar publicatie gaan. Inclusief planning per kanaal, statuslabels en een compacte tijdlijnweergave."
+    }
   },
   "bio": {
     "sectionTitleTop": "SYNTAX",

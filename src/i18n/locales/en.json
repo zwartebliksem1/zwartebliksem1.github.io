@@ -1,13 +1,17 @@
 {
   "nav": {
-    "origin": "001 — ORIGIN",
+    "origin": "001 — HOME",
     "archive": "002 — ARCHIVE",
     "identity": "003 — IDENTITY",
-    "stack": "004 — STACK",
+    "stack": "004 — SKILLS",
     "commit": "005 — COMMIT"
   },
   "menu": {
     "systemModule": "SYS // NAVIGATION_MODULE v1.0"
+  },
+  "theme": {
+    "dark": "Dark",
+    "light": "Light"
   },
   "language": {
     "english": "English",
@@ -26,7 +30,29 @@
   },
   "repos": {
     "title": "REPOSITORY ARCHIVE",
-    "scrollHint": "Scroll to explore"
+    "scrollHint": "Recent repositories worth exploring"
+  },
+  "projects": {
+    "title": "PROJECTS",
+    "scrollHint": "Personal & client work",
+    "readMore": "Read more",
+    "close": "Close",
+    "items": {
+      "luconePlatform": "Internal SaaS platform for managing client projects, invoices, and team workflows. Built for Lucone BV.",
+      "kasTelApp": "Cash-register counting app for quick inventory and end-of-day validation.",
+      "storageTracker": "Storage tracking tool to monitor stock levels, item locations, and usage trends.",
+      "minecraftPlugins": "Custom Minecraft plugins built for private servers and gameplay experiments.",
+      "matchfinderrz": "Prototype matching platform focused on fast teammate discovery and profile filtering.",
+      "socialMediaCalendar": "Content planning workspace to schedule, organize, and review social posts."
+    },
+    "details": {
+      "luconePlatform": "This platform combines CRM, task workflows, and billing in one internal dashboard. It is designed for daily operations and focuses on speed, auditability, and clear team ownership.",
+      "kasTelApp": "Built to simplify cash-up moments at the end of shifts. The app records denomination counts, compares expected totals, and flags mismatches before final submission.",
+      "storageTracker": "A practical system for product storage administration. It supports quick search, movement logs, and clear overviews so teams know exactly what is available and where.",
+      "minecraftPlugins": "A set of plugin modules for mini-games, moderation tooling, and server-side quality-of-life features. Great for experimenting with event-driven architecture in Java.",
+      "matchfinderrz": "An early-stage concept where users can be matched based on role preferences, availability, and shared goals. Focus was on filtering UX and rapid profile comparisons.",
+      "socialMediaCalendar": "A lightweight content pipeline where ideas move from draft to publication. Includes planning per channel, status labels, and a compact timeline overview."
+    }
   },
   "bio": {
     "sectionTitleTop": "SYNTAX",
