@@ -30,7 +30,8 @@
   },
   "repos": {
     "title": "REPOSITORY ARCHIVE",
-    "scrollHint": "Recent repositories worth exploring"
+    "scrollHint": "Recent repositories worth exploring",
+    "noDescription": "No description available."
   },
   "projects": {
     "title": "PROJECTS",
@@ -38,12 +39,12 @@
     "readMore": "Read more",
     "close": "Close",
     "items": {
-      "luconePlatform": "Internal SaaS platform for managing client projects, invoices, and team workflows. Built for Lucone BV.",
+      "luconePlatform": "Internal SaaS platform for managing client projects, invoices, and team workflows.",
       "kasTelApp": "Cash-register counting app for quick inventory and end-of-day validation.",
       "storageTracker": "Storage tracking tool to monitor stock levels, item locations, and usage trends.",
       "minecraftPlugins": "Custom Minecraft plugins built for private servers and gameplay experiments.",
-      "matchfinderrz": "Prototype matching platform focused on fast teammate discovery and profile filtering.",
-      "socialMediaCalendar": "Content planning workspace to schedule, organize, and review social posts."
+      "matchfinderrz": "Matching platform for gamers focused on fast teammate discovery and making connections.",
+      "socialMediaCalendar": "Content planning workspace to schedule, post, and share with clients."
     },
     "details": {
       "luconePlatform": "This platform combines CRM, task workflows, and billing in one internal dashboard. It is designed for daily operations and focuses on speed, auditability, and clear team ownership.",
@@ -62,25 +63,25 @@
     "summary": "I'm a software engineer passionate about distributed systems, developer tools, and the intersection of design and engineering. With over 5 years of experience building production systems, I approach every problem as an architecture challenge — seeking elegant, maintainable solutions that stand the test of scale.",
     "experience": "EXPERIENCE",
     "education": "EDUCATION",
-    "philosophy": "PHILOSOPHY",
+    "skills": "RARE SKILLS",
     "modules": {
       "experience": [
         {
-          "role": "Senior Software Engineer",
-          "org": "Your Company",
-          "period": "2022 — Present",
-          "detail": "Leading the platform team, designing APIs and infrastructure that serves millions of requests daily."
+          "role": "Graduation Internship",
+          "org": "Giraffes4Zebras",
+          "period": "feb. 2026 — jun. 2026",
+          "detail": "The final assignment for my degree, where I was tasked with creating a social media calendar to streamline content planning and posting."
         },
         {
-          "role": "Software Engineer",
-          "org": "Previous Company",
-          "period": "2020 — 2022",
-          "detail": "Built real-time data pipelines and microservice architecture for the analytics platform."
+          "role": "Intern IT Teacher",
+          "org": "Landstede MBO",
+          "period": "sep. 2025 — jan. 2026",
+          "detail": "Tasked with teaching the next generation about Artificial Intelligence. Focussed on clear communication and turning boring subjects fun."
         },
         {
-          "role": "Junior Developer",
-          "org": "First Company",
-          "period": "2018 — 2020",
+          "role": "Intern Webdevelopment",
+          "org": "Flinker ontwikkeling",
+          "period": "apr. 2024 — jun. 2024",
           "detail": "Full-stack development on customer-facing applications using React and Node.js."
         }
       ],
@@ -89,15 +90,16 @@
           "role": "HBO-ICT",
           "org": "Hogeschool Windesheim",
           "period": "2022 — 2026",
-          "detail": "Focus on algorithms, distributed systems, and human-computer interaction."
+          "detail": "Windesheim taught me cooperation, how to learn and over 15 different programming languages. Additionally, they provided various internships to further sharpen my skills."
         },
         {
           "role": "Informatica",
-          "org": "RSG Slingerbos Harderwijk",
-          "period": "2020 — 2022"
+          "org": "RSG Slingerbos",
+          "period": "2020 — 2022",
+          "detail": "The start of my development carreer, where I learned HTML, CSS, Python and C# and passed top of the class."
         }
       ],
-      "philosophy": [
+      "skills": [
         {
           "role": "Code is communication",
           "org": "",

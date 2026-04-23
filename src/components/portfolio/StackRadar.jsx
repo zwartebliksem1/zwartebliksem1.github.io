@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { useRef, useState } from 'react';
+import { motion, useInView } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
 const STACK_BG = "https://media.base44.com/images/public/69e72742f079a5923be33b6b/462781655_generated_252762b3.png";
@@ -34,15 +34,18 @@ const SKILL_TREE = [
 ];
 
 function SkillNode({ skill, index, isActive, onClick }) {
+  const nodeRef = useRef(null);
+  const isNodeInView = useInView(nodeRef, { once: true, margin: '-50px' });
+
   return (
     <motion.button
+      ref={nodeRef}
       initial={{ opacity: 0, scale: 0.8 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      viewport={{ once: true }}
+      animate={isNodeInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
       transition={{ duration: 0.4, delay: index * 0.03 }}
       onClick={() => onClick(skill)}
       className={`
-        relative px-3 py-1.5 font-mono text-xs border rounded-sm transition-all duration-300
+        relative px-3 py-1.5 font-mono text-xs border rounded-sm transition-colors duration-300
         ${isActive
           ? 'border-accent text-accent bg-accent/10 shadow-[0_0_12px_rgba(0,245,255,0.15)]'
           : 'border-border/40 text-muted-foreground hover:border-primary/50 hover:text-primary hover:bg-primary/5'
@@ -56,11 +59,14 @@ function SkillNode({ skill, index, isActive, onClick }) {
 
 function DependencyGroup({ group, index, activeSkill }) {
   const { t } = useTranslation();
+  const groupRef = useRef(null);
+  const isGroupInView = useInView(groupRef, { once: true, margin: '-50px' });
+
   return (
     <motion.div
+      ref={groupRef}
       initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
+      animate={isGroupInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
       className="relative"
     >

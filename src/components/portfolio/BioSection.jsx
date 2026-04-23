@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Briefcase, GraduationCap, Heart, MapPin } from 'lucide-react';
+import { Briefcase, GraduationCap, MapPin, Gem } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 const PORTRAIT_IMG = "https://media.base44.com/images/public/69e72742f079a5923be33b6b/ec73291ae_generated_9c760ecf.png";
@@ -7,7 +7,7 @@ const PORTRAIT_IMG = "https://media.base44.com/images/public/69e72742f079a5923be
 const MODULES = [
   { icon: Briefcase, titleKey: 'bio.experience', itemsKey: 'bio.modules.experience' },
   { icon: GraduationCap, titleKey: 'bio.education', itemsKey: 'bio.modules.education' },
-  { icon: Heart, titleKey: 'bio.philosophy', itemsKey: 'bio.modules.philosophy' },
+  { icon: Gem, titleKey: 'bio.skills', itemsKey: 'bio.modules.skills' },
 ];
 
 function LifeModule({ module, index }) {

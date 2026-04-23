@@ -30,7 +30,8 @@
   },
   "repos": {
     "title": "REPOSITORY ARCHIEF",
-    "scrollHint": "Recente repositories om te verkennen"
+    "scrollHint": "Recente repositories om te verkennen",
+    "noDescription": "Geen beschrijving beschikbaar."
   },
   "projects": {
     "title": "PROJECTEN",
@@ -42,8 +43,8 @@
       "kasTelApp": "Kas-tel app voor snelle voorraadcontrole en eindafrekening.",
       "storageTracker": "Storage tracking tool om voorraadniveaus, locaties en gebruik te monitoren.",
       "minecraftPlugins": "Aangepaste Minecraft-plugins gebouwd voor private servers en gameplay-experimenten.",
-      "matchfinderrz": "Prototype matchingsplatform gericht op snel teamgenoten vinden en profielen filteren.",
-      "socialMediaCalendar": "Contentplanningsomgeving om social posts te plannen, ordenen en beoordelen."
+      "matchfinderrz": "Matchingplatform voor gamers gericht op snel teamgenoten vinden en connecties maken.",
+      "socialMediaCalendar": "Contentplanningsomgeving om social posts te plannen, posten en gemakkelijk te delen met klanten."
     },
     "details": {
       "luconePlatform": "Dit platform combineert CRM, taakworkflows en facturatie in één intern dashboard. Het is gebouwd voor dagelijkse operatie met focus op snelheid, controle en duidelijk eigenaarschap binnen het team.",
@@ -57,25 +58,25 @@
   "bio": {
     "sectionTitleTop": "SYNTAX",
     "sectionTitleBottom": "BIO_",
-    "headline": "Systemen bouwen die gedachte schalen.",
+    "headline": "Meer dan ontwikkelen.",
     "location": "Harderwijk, Nederland",
-    "summary": "Ik ben een software engineer gepassioneerd door gedistribueerde systemen, developer tools, en de kruising van design en engineering. Met meer dan 5 jaar ervaring in het bouwen van productiesystemen, benaader ik elk probleem als een architectuuruitdaging — op zoek naar elegante, onderhoudbare oplossingen die de proef van schaal doorstaan.",
+    "summary": "Ik ben een software engineer die begrijpt dat mijn rol verder gaat dan alleen het ontwikkelen van applicaties. Afstemming met belanghebbenden is essentieel om tot een succesvol eindproduct te komen. Door regelmatig en helder te communiceren zorg ik ervoor dat oplossingen aansluiten bij de wensen en behoeften.",
     "experience": "ERVARING",
     "education": "ONDERWIJS",
-    "philosophy": "FILOSOFIE",
+    "skills": "ZELDZAME VAARDIGHEDEN",
     "modules": {
       "experience": [
         {
           "role": "Afstudeerstage Software Engineer",
           "org": "Giraffes4Zebras",
           "period": "feb. 2026 — jun. 2026",
-          "detail": "."
+          "detail": "De laatste opdracht van mijn opleiding, waarbij ik een social media kalender moest creëren om contentplanning en posten te versnellen."
         },
         {
           "role": "Stagiair Docent ICT",
           "org": "Landstede MBO",
           "period": "sep. 2025 — jan. 2026",
-          "detail": "Bouwde realtime datapijplijnen en microservice-architectuur voor het analytics-platform."
+          "detail": "De opdracht gekregen de volgende generatie over Kunstmatige Intelligentie te leren. Gefocust op duidelijke communicatie en het leuk maken van saaie onderwerpen."
         },
         {
           "role": "Stagiair Webdevelopment",
@@ -89,26 +90,27 @@
           "role": "HBO-ICT",
           "org": "Hogeschool Windesheim",
           "period": "2022 — 2026",
-          "detail": "Focus op algoritmen, gedistribueerde systemen en mens-computerinteractie."
+          "detail": "Windesheim heeft mij samenwerking, hoe ik moet leren en meer van 15 verschillende programmeertalen geleerd. Verder heeft Windesheim verschillende stage plekken verzorgd waar ik mijn vaardigheden nog verder aan kon scherpen."
         },
         {
           "role": "Informatica",
           "org": "RSG Slingerbos Harderwijk",
-          "period": "2020 — 2022"
+          "period": "2020 — 2022",
+          "detail": "De start van mijn programmeur carrière, waar ik HTML, CSS, Python en C# heb geleerd."
         }
       ],
-      "philosophy": [
+      "skills": [
         {
-          "role": "Code is communicatie",
+          "role": "Communicatie",
           "org": "",
           "period": "",
-          "detail": "Ik geloof dat de beste code een verhaal vertelt. Elke functienaam, elke abstractiegrens en elk commit-bericht is een kans om intentie helder te communiceren naar de volgende engineer."
+          "detail": "De taal die een developer spreek is uniek en vaak onverstaanbaar voor non-developers. Ik leg de focus op complexe technische termen over te brengen, zonder dat de essentie hiervan verloren raakt."
         },
         {
-          "role": "Snel shippen, vaak itereren",
+          "role": "Samenwerking",
           "org": "",
           "period": "",
-          "detail": "Perfect is de vijand van live. Ik kies liever voor snelle iteratie met sterke observability dan voor lange planningscycli."
+          "detail": "Mede door mijn opleiding, HBO-ICT, heb ik een sterke basis voor samenwerking opgebouwd. Hierbij staat het delen van kennis, efficiënte communicatie en het vooropstellen van team succes centraal."
         }
       ]
     },

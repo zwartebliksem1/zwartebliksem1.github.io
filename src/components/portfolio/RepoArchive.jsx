@@ -28,7 +28,11 @@ const PROJECTS_DATA = [
     descriptionKey: 'luconePlatform',
     language: 'TypeScript',
     techStack: ['TypeScript', 'React', 'Node.js'],
-    images: [],
+    images: [
+      '/HERO_BG.png',
+      '/Logo.png',
+      '/HERO_BG.png'
+    ],
     stars: 0,
     forks: 0,
     lastCommit: '2d ago',
@@ -157,7 +161,7 @@ export default function RepoArchive() {
             const primaryLanguage = repo.language || 'Code';
             return {
               name: repo.name,
-              description: repo.description || 'No description provided.',
+              description: repo.description || t('repos.noDescription'),
               language: primaryLanguage,
               techStack: [primaryLanguage],
               stars: repo.stargazers_count,
@@ -253,8 +257,8 @@ export default function RepoArchive() {
       {/* Horizontal scrolling cards */}
       <div
         ref={scrollRef}
-        className="flex gap-6 overflow-x-auto px-6 md:px-20 pb-6 scrollbar-hide"
-        style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+        className="flex gap-6 overflow-x-auto overflow-y-hidden px-6 md:px-20 pb-6 scrollbar-hide"
+        style={{ scrollbarWidth: 'none', msOverflowStyle: 'none', overscrollBehaviorX: 'contain' }}
       >
         {(isLoading ? [] : displayRepos).map((repo, i) => (
           <RepoCard key={repo.name} repo={repo} index={i} />
@@ -301,8 +305,8 @@ export default function RepoArchive() {
       {/* Projects horizontal scrolling cards */}
       <div
         ref={projectsScrollRef}
-        className="flex gap-6 overflow-x-auto px-6 md:px-20 pb-6 scrollbar-hide"
-        style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+        className="flex gap-6 overflow-x-auto overflow-y-hidden px-6 md:px-20 pb-6 scrollbar-hide"
+        style={{ scrollbarWidth: 'none', msOverflowStyle: 'none', overscrollBehaviorX: 'contain' }}
       >
         {PROJECTS_DATA.map((project, i) => (
           <RepoCard
@@ -349,6 +353,10 @@ export default function RepoArchive() {
             <div className="p-5 md:p-6 space-y-5">
               <p className="font-sans text-sm md:text-base text-muted-foreground leading-relaxed">
                 {t(`projects.items.${selectedProject.descriptionKey}`)}
+              </p>
+
+              <p className="font-sans text-sm md:text-base text-foreground leading-relaxed whitespace-pre-line">
+                {t(`projects.details.${selectedProject.descriptionKey}`)}
               </p>
 
               <p className="font-sans text-sm md:text-base text-foreground leading-relaxed whitespace-pre-line">

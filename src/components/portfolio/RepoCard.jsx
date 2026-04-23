@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { useRef, useState } from 'react';
+import { motion, useInView } from 'framer-motion';
 import { Star, GitFork, Clock, ExternalLink, Code2 } from 'lucide-react';
 
 /**
@@ -38,18 +38,20 @@ const LANG_COLORS = {
 /** @param {RepoCardProps} props */
 export default function RepoCard({ repo, index, hover = true, redirect = true }) {
   const [hovered, setHovered] = useState(false);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: '-50px' });
 
   const langColor = LANG_COLORS[/** @type {keyof typeof LANG_COLORS} */ (repo.language)] || '#2E7BFF';
 
   return (
     <motion.div
+      ref={ref}
       initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: '-50px' }}
+      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
       onMouseEnter={() => hover && setHovered(true)}
       onMouseLeave={() => hover && setHovered(false)}
-      className="group relative min-w-[320px] md:min-w-[400px] border border-border/40 bg-card/60 backdrop-blur-sm rounded-sm overflow-hidden hover:border-primary/50 transition-all duration-500"
+      className="group relative min-w-[320px] md:min-w-[400px] border border-border/40 bg-card/60 backdrop-blur-sm rounded-sm overflow-hidden hover:border-primary/50 transition-colors duration-500"
     >
       {/* Glitch overlay on hover */}
       {hovered && (
@@ -150,11 +152,9 @@ export default function RepoCard({ repo, index, hover = true, redirect = true })
 
       {/* Hover expansion - live link */}
       {hover && (
-        <motion.div
-          initial={false}
-          animate={{ height: hovered ? 'auto' : 0, opacity: hovered ? 1 : 0 }}
-          transition={{ duration: 0.3 }}
-          className="relative z-10 overflow-hidden border-t border-border/30"
+        <div
+          className="absolute inset-x-0 bottom-0 z-20 border-t border-border/30 bg-card/95 backdrop-blur-sm translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-300"
+          style={{ pointerEvents: hovered ? 'auto' : 'none' }}
         >
           <div className="p-4 flex items-center justify-between">
             <div className="flex items-center gap-2">
@@ -172,7 +172,7 @@ export default function RepoCard({ repo, index, hover = true, redirect = true })
             </a>
           )}
         </div>
-      </motion.div>
+      </div>
       )}
     </motion.div>
   );
